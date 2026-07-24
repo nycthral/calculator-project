@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.nycthral.calculator.CalculatorTest" time="0.025" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.nycthral.calculator.HistoryManagerTest" time="0.004" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="26"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -64,9 +64,8 @@
     <property name="maven.repo.local" value="C:\Users\yoopk\.m2\repository"/>
     <property name="java.class.version" value="70.0"/>
   </properties>
-  <testcase name="testMultiplication" classname="com.nycthral.calculator.CalculatorTest" time="0.011"/>
-  <testcase name="testAddition" classname="com.nycthral.calculator.CalculatorTest" time="0.0"/>
-  <testcase name="testDivisionByZero" classname="com.nycthral.calculator.CalculatorTest" time="0.001"/>
-  <testcase name="testDivision" classname="com.nycthral.calculator.CalculatorTest" time="0.001"/>
-  <testcase name="testSubtraction" classname="com.nycthral.calculator.CalculatorTest" time="0.0"/>
+  <testcase name="testAdd" classname="com.nycthral.calculator.HistoryManagerTest" time="0.001"/>
+  <testcase name="testGetLastEmpty" classname="com.nycthral.calculator.HistoryManagerTest" time="0.001"/>
+  <testcase name="testClear" classname="com.nycthral.calculator.HistoryManagerTest" time="0.001"/>
+  <testcase name="testMaxTen" classname="com.nycthral.calculator.HistoryManagerTest" time="0.001"/>
 </testsuite>
