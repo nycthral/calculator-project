@@ -1,0 +1,5 @@
+# Created at 2026-07-27T15:59:17.167
+Boot Manifest-JAR contains absolute paths in classpath 'X:\IntelliJ IDEA 2026.1.3\Projects\calculator-project\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
