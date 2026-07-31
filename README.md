@@ -19,7 +19,9 @@
 ## Запуск
 
 git clone https://github.com/nycthral/calculator-project.git
+
 cd calculator-project
+
 mvn exec:java
 
 ## Тесты
