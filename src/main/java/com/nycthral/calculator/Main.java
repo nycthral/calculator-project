@@ -1,5 +1,5 @@
 package com.nycthral.calculator;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class Main {
             System.out.print("> ");
             String expression = scanner.nextLine();
             if (expression.equals("history")) {
-                ArrayList<String> list = historyManager.getAll();
+                List<String> list = historyManager.getAll();
                 if (list.isEmpty()) {
                 System.out.println("History is empty");
             } else {

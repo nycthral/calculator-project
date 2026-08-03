@@ -1,6 +1,7 @@
 package com.nycthral.calculator;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class HistoryManager {
     private ArrayList<String> historyList = new ArrayList<>();
@@ -10,8 +11,8 @@ public class HistoryManager {
         }
         historyList.add(entry);
     }
-        public ArrayList<String> getAll() {
-            return historyList;
+        public List<String> getAll() {
+            return List.copyOf(historyList);
         }
         public String getLast() {
         if (historyList.isEmpty()) {
