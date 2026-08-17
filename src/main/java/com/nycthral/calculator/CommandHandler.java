@@ -45,7 +45,7 @@ public class CommandHandler {
             return sb.toString();
         }
         if (input.equals("exit")) {
-            return "exit";
+            return null;
         }
         if (input.equals("last")) {
             String lastEntry = history.getLast();

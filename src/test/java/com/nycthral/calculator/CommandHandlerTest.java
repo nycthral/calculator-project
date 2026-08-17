@@ -38,7 +38,7 @@ class CommandHandlerTest {
     void testExit() {
         CommandHandler handler = new CommandHandler(new Calculator(), new HistoryManager());
         String result = handler.handle("exit");
-        assertEquals("exit", result);
+        assertNull(result);
     }
 
     @Test

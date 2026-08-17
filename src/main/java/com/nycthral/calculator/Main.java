@@ -15,7 +15,7 @@ public class Main {
             System.out.print("> ");
             String input = scanner.nextLine();
             String result = handler.handle(input);
-            if (result.equals("exit")) {
+            if (result == null) {
                 break;
             }
             System.out.println(result);
