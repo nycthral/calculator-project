@@ -1,4 +1,6 @@
 package com.nycthral.calculator;
+import com.nycthral.calculator.history.HistoryManager;
+
 import java.util.List;
 
 public class CommandHandler {
@@ -11,6 +13,7 @@ public class CommandHandler {
     }
 
     public String handle(String input) {
+        input = input.trim().replaceAll("\\s+", " ");
         if (input.equals("help")) {
             return """
                     Available commands:
@@ -35,7 +38,11 @@ public class CommandHandler {
             if (list.isEmpty()) {
                 return "History is empty";
             }
-            return list.toString();
+            StringBuilder sb = new StringBuilder();
+            for(int i = 0; i < list.size(); i++) {
+                sb.append(i + 1).append(") ").append(list.get(i)).append("\n");
+            }
+            return sb.toString();
         }
         if (input.equals("exit")) {
             return "exit";

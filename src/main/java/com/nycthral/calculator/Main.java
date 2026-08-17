@@ -1,6 +1,8 @@
 package com.nycthral.calculator;
 
+import com.nycthral.calculator.history.HistoryManager;
 import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) {

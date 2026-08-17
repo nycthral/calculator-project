@@ -1,4 +1,5 @@
-package com.nycthral.calculator;
+package com.nycthral.calculator.history;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,4 +28,3 @@ public class HistoryManager {
         return historyList.size();
         }
     }
-
