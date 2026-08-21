@@ -24,6 +24,22 @@ class HistoryManagerTest {
         assertNull(history.getLast());
     }
     @Test
+    void testGetLastNonEmpty() {
+        HistoryManager history = new HistoryManager();
+        history.add("first");
+        history.add("second");
+        assertEquals("second", history.getLast());
+    }
+    @Test
+    void testMaxTenKeepsNewest() {
+        HistoryManager history = new HistoryManager();
+        for (int i = 0; i < 11; i++) {
+            history.add("Entry " + i);
+        }
+        assertFalse(history.getAll().contains("Entry 0"));
+        assertEquals("Entry 10", history.getLast());
+    }
+    @Test
     void testMaxTen() {
         HistoryManager history = new HistoryManager();
         for (int i = 0; i < 11; i++) {

@@ -47,4 +47,17 @@ class CommandHandlerTest {
         String result = handler.handle("5 +");
         assertTrue(result.contains("Invalid format"));
     }
+    @Test
+    void testLastEmpty() {
+        CommandHandler handler = new CommandHandler(new Calculator(), new HistoryManager());
+        String result = handler.handle("last");
+        assertEquals("History is empty", result);
+    }
+    @Test
+    void testLastWithEntry() {
+        CommandHandler handler = new CommandHandler(new  Calculator(), new HistoryManager());
+        handler.handle("5 + 3");
+        String result = handler.handle("last");
+        assertTrue(result.contains("Last operation: 5 + 3 = 8.0"));
+    }
 }
